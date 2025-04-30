@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>최진솔 이력서</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+    }
+
+    /* 사이드바 스타일 */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 180px;
+      height: 100vh;
+      background-color: #222;
+      color: white;
+      padding: 20px 15px;
+    }
+
+    nav h2 {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 10px;
+      font-size: 0.95em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      margin-left: 200px;
+      padding: 40px;
+      max-width: 800px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: 20px;
+    }
+
+    .header-text h1 {
+      margin-bottom: 5px;
+    }
+
+    .contact-info {
+      font-size: 0.9em;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .job-title {
+      font-weight: bold;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>기본 정보</h2>
+    <a href="#profile">프로필</a>
+    <a href="#skills">기술 스택</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#education">학력</a>
+  </nav>
+
+  <div class="content">
+    <header>
+      <div class="header-text">
+        <h1>최진솔</h1>
+        <div class="contact-info">
+          📧 jinsol@naver.com<br />
+          📱 010-9272-4065<br />
+          🖥️ github.com/choelsol
+        </div>
+      </div>
+      <img src="https://raw.githubusercontent.com/choelsol/resume/main/jinsol.jpg" alt="프로필 사진" class="profile-photo"/>
+    </header>
+
+    <section id="profile">
+      <h2>프로필</h2>
+      <p>풀스택 개발자</p>
+    </section>
+
+    <section id="skills">
+      <h2>기술 스택</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React</li>
+        <li>Node.js, Express</li>
+        <li>MySQL</li>
+        <li>Git, GitHub, AWS</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>프로젝트</h2>
+      <ul>
+        <li>
+          <span class="job-title">도서 리뷰 검색 사이트</span> <span class="date">(2024.09 ~ 2024.12)</span><br />
+          - 사용자가 도서 제목 또는 작가명으로 책을 검색하고 리뷰를 확인할 수 있는 웹 서비스
+        </li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>학력</h2>
+      <p>동양미래대학교 컴퓨터소프트웨어공학과 재학 (2023 ~ )</p>
+    </section>
+  </div>
+</body>
+</html>
